@@ -1,0 +1,90 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @user.name %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @user.email %>
+</p>
+
+<p>
+  <b>Password:</b>
+  <%= @user.password %>
+</p>
+
+<p>
+  <b>Dept:</b>
+  <%= @user.dept %>
+</p>
+
+<p>
+  <b>Housing:</b>
+  <%= @user.housing %>
+</p>
+
+<p>
+  <b>Surface:</b>
+  <%= @user.surface %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @user.date %>
+</p>
+
+<p>
+  <b>People:</b>
+  <%= @user.people %>
+</p>
+
+<p>
+  <b>W heating power:</b>
+  <%= @user.w_heating_power %>
+</p>
+
+<p>
+  <b>Heating power:</b>
+  <%= @user.heating_power %>
+</p>
+
+<p>
+  <b>Cooking power:</b>
+  <%= @user.cooking_power %>
+</p>
+
+<p>
+  <b>Power comment:</b>
+  <%= @user.power_comment %>
+</p>
+
+<p>
+  <b>Level:</b>
+  <%= @user.level %>
+</p>
+
+<p>
+  <b>Objectives comment:</b>
+  <%= @user.objectives_comment %>
+</p>
+
+<p>
+  <b>Strengths:</b>
+  <%= @user.strengths %>
+</p>
+
+<p>
+  <b>Weaknesses:</b>
+  <%= @user.weaknesses %>
+</p>
+
+<p>
+  <b>Private comment:</b>
+  <%= @user.private_comment %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

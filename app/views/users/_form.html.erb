@@ -1,0 +1,85 @@
+<%= form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :password %><br />
+    <%= f.text_field :password %>
+  </div>
+  <div class="field">
+    <%= f.label :dept %><br />
+    <%= f.text_field :dept %>
+  </div>
+  <div class="field">
+    <%= f.label :housing %><br />
+    <%= f.text_field :housing %>
+  </div>
+  <div class="field">
+    <%= f.label :surface %><br />
+    <%= f.text_field :surface %>
+  </div>
+  <div class="field">
+    <%= f.label :date %><br />
+    <%= f.datetime_select :date %>
+  </div>
+  <div class="field">
+    <%= f.label :people %><br />
+    <%= f.text_field :people %>
+  </div>
+  <div class="field">
+    <%= f.label :w_heating_power %><br />
+    <%= f.text_field :w_heating_power %>
+  </div>
+  <div class="field">
+    <%= f.label :heating_power %><br />
+    <%= f.text_field :heating_power %>
+  </div>
+  <div class="field">
+    <%= f.label :cooking_power %><br />
+    <%= f.text_field :cooking_power %>
+  </div>
+  <div class="field">
+    <%= f.label :power_comment %><br />
+    <%= f.text_area :power_comment %>
+  </div>
+  <div class="field">
+    <%= f.label :level %><br />
+    <%= f.text_field :level %>
+  </div>
+  <div class="field">
+    <%= f.label :objectives_comment %><br />
+    <%= f.text_area :objectives_comment %>
+  </div>
+  <div class="field">
+    <%= f.label :strengths %><br />
+    <%= f.text_area :strengths %>
+  </div>
+  <div class="field">
+    <%= f.label :weaknesses %><br />
+    <%= f.text_area :weaknesses %>
+  </div>
+  <div class="field">
+    <%= f.label :private_comment %><br />
+    <%= f.text_area :private_comment %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

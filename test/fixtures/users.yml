@@ -1,0 +1,39 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  email: MyString
+  password: MyString
+  dept: 
+  housing: MyString
+  surface: 
+  date: 2012-10-20 11:12:26
+  people: 
+  w_heating_power: MyString
+  heating_power: MyString
+  cooking_power: MyString
+  power_comment: MyText
+  level: MyString
+  objectives_comment: MyText
+  strengths: MyText
+  weaknesses: MyText
+  private_comment: MyText
+
+two:
+  name: MyString
+  email: MyString
+  password: MyString
+  dept: 
+  housing: MyString
+  surface: 
+  date: 2012-10-20 11:12:26
+  people: 
+  w_heating_power: MyString
+  heating_power: MyString
+  cooking_power: MyString
+  power_comment: MyText
+  level: MyString
+  objectives_comment: MyText
+  strengths: MyText
+  weaknesses: MyText
+  private_comment: MyText
